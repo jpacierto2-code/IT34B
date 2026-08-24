@@ -1,7 +1,8 @@
-<?php?>
+<?php
 
-function redirecct ($parth){
-    header("Location: ".BASE_URL.$parth);
-    exit();
+function redirect($path){
+    header("Location: " . BASE_URL . $path);
+    exit;
 }
+
 ?>
