@@ -1,12 +1,15 @@
 <?php
+
 session_start();
 
-define('BASE_URL','http://localhost/it34b');
+require_once __DIR__ . '/../includes/activity-logger.php';
 
-define('DB_HOST','localhost');
-define('DB_NAME', 'it34_b');
-define('DB_USER','root');
-define('DB_PASS','');
+define('BASE_URL', 'http://localhost/it34b');
+
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'it34b_lab_db');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 
 try {
     $pdo = new PDO(
@@ -17,3 +20,6 @@ try {
     );
 } catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());
+}
+
+?>

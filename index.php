@@ -7,8 +7,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $action = trim($_POST['action'] ?? '');
 
     $user_id = $_SESSION['user_id'] ?? null;
-    $user_email = $_SESSION['user_email'] ?? null;
-
+    $user_email = $_SESSION['user_email'] ?? null;    
 }
 
 
@@ -23,10 +22,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 <body>
     <form method="POST">
         <button
-            type="submit"
-            name="action"
+        type="submit"
+        name="action"
         >Sample</button>
-    </form>
+</from>    
     
 </body>
 </html>
