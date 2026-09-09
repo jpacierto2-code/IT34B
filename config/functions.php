@@ -5,7 +5,6 @@ function redirect($path){
     exit;
 }
 
-<?php
 
 function loginUser($pdo, $login, $password)
 {
@@ -60,3 +59,4 @@ function requireRole($role)
         die('Access denied.');
     }
 }
+?>
