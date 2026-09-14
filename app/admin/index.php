@@ -31,8 +31,8 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Welcome Admin</title>
 </head>
 <body>
-    <h1>Welcome Admin</h1>
-    <a href="../../auth/signout.php">Sign Out</a>
+    <h1>Welcome JP</h1>
+    
     <table border="1">
         <thead>
             <tr>
@@ -56,10 +56,11 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= htmlspecialchars($activity['activity_log_status'])?></td>
                     <td><?= htmlspecialchars($activity['activity_log_ip_address'])?></td>
                     <td><?= htmlspecialchars($activity['activity_log_user_agent'])?></td>
-                    <td><?= htmlspecialchars($activity['activity_log_created at'])?></td>
+                    <td><?= htmlspecialchars($activity['activity_log_created_at'])?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
 </body>
 </html>
+<a href="../../auth/signout.php">Sign Out</a>
