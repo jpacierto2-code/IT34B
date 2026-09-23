@@ -1,9 +1,9 @@
 <?php
 
-function loginUser($pdo, $login, $password){
-    #Query 2
+function loginUser($pdo, $login, $password)
+{
     $sql = "
-        SELECT
+        SELECT 
             user_id,
             user_email,
             user_username,
@@ -32,7 +32,7 @@ function loginUser($pdo, $login, $password){
     $_SESSION['user_email'] = $user['user_email'];
     $_SESSION['user_username'] = $user['user_username'];
     $_SESSION['user_role'] = $user['user_role'];
-
+    $_SESSION['session_id'] = startUserSession($pdo);
     return true;
 }
 

@@ -7,6 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 require_once __DIR__ . '/../functions/activity.php';
 require_once __DIR__ . '/../functions/auth.php';
 require_once __DIR__ . '/../functions/redirect.php';
+require_once __DIR__ . '/../functions/session.php';
 
 define('BASE_URL', 'http://localhost/it34b');
 
