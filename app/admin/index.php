@@ -1,6 +1,7 @@
+<h1>Acierto</h1>
+<h1>Welcome Admin</h1>
 <?php
 require '../../config/config.php';
-require '../../config/functions.php';
 
 requireRole('admin');
 
@@ -31,8 +32,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Welcome Admin</title>
 </head>
 <body>
-    <h1>Welcome JP</h1>
-    
+    <h1>Welcome Admin</h1>
     <table border="1">
         <thead>
             <tr>
@@ -63,4 +63,5 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </table>
 </body>
 </html>
-<a href="../../auth/signout.php">Sign Out</a>
+
+<h1><a href="../../auth/signout.php">Sign Out</a></h1>
