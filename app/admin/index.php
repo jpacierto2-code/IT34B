@@ -1,5 +1,5 @@
 <h1>Acierto</h1>
-<h1>Welcome Admin</h1>
+
 <?php
 require '../../config/config.php';
 
